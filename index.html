@@ -59,6 +59,14 @@ repetitive spam texts to lure out personal information
 to the input phone number (top secret)
 </i></p>
 
-<script src="script.js"></script>
+<script>
+    const slider = document.getElementById("numberSlider");
+    const numberValue = document.getElementById("numberValue");
+
+    slider.addEventListener("input", function() {
+        numberValue.textContent = slider.value;
+    });
+</script>
+  
 </body>
 </html>
